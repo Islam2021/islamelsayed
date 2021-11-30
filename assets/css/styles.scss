@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+.ml-70 {
+    position: relative;
+    left: -70px;
+}
+
+.container {
+    max-width: 1240px;
+}
+
+.btn-white {
+    background: #fff;
+    border: 0;
+    padding: 15px 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main-title {
+    position: relative;
+    padding-bottom: 10px;
+    small {
+        font-size: 12px;
+        color: #222;
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+        span {
+            color: #AC61EE;
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: #ECF0F6;
+        width: 120px;
+        height: 2px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: #AC61EE;
+        width: 60px;
+        height: 2px;
+    }
+}
+
+.wrapper {
+    position: relative;
+    .menu-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100px;
+        height: 100%;
+        .header-sidebar {
+            height: 100%;
+            background-color: #fff;
+            box-shadow: 0 -9px 25px #00000008;
+            .header-wrap {
+                position: relative;
+                display: flex;
+                height: 100%;
+                flex-flow: column;
+                padding: 20px 0 30px 0;
+                justify-content: space-between;
+                .logo {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        display: none;
+                    }
+                    font-size: 45px;
+                    font-weight: 700;
+                    line-height: normal;
+                    span {
+                        color: #AC61EE;
+                    }
+                }
+                .social-media {
+                    display: flex;
+                    justify-content: center;
+                    .nav-list {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        .nav-item {
+                            width: 40px;
+                            height: 40px;
+                            background: #ccc;
+                            border-radius: 25px;
+                            -webkit-border-radius: 25px;
+                            -moz-border-radius: 25px;
+                            -ms-border-radius: 25px;
+                            -o-border-radius: 25px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            line-height: normal;
+                            &.whatsapp {
+                                background: #31D02F;
+                            }
+                            &.facebook {
+                                background: #4267B2;
+                            }
+                            &.instagram {
+                                background: linear-gradient( 200deg, #D23D96, #FF563E, #FEC150);
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content-wrapper {
+        margin-left: 100px;
+        .main-portfolio {
+            .column {
+                background: #EDEDED;
+                height: 100vh;
+                width: 100%;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: all .3s ease-in-out;
+                    -webkit-transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    -ms-transition: all .3s ease-in-out;
+                    -o-transition: all .3s ease-in-out;
+                    cursor: pointer;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.04);
+                        -webkit-transform: scale(1.04);
+                        -moz-transform: scale(1.04);
+                        -ms-transform: scale(1.04);
+                        -o-transform: scale(1.04);
+                    }
+                }
+            }
+            .owl-carousel {
+                .owl-nav {
+                    margin: 0;
+                    opacity: 0;
+                    transition: opacity .3s ease-in-out;
+                    -webkit-transition: opacity .3s ease-in-out;
+                    -moz-transition: opacity .3s ease-in-out;
+                    -ms-transition: opacity .3s ease-in-out;
+                    -o-transition: opacity .3s ease-in-out;
+                    .owl-prev {
+                        position: absolute;
+                        left: 0;
+                        top: 45%;
+                        margin: 0;
+                        padding: 0;
+                        width: 55px;
+                        height: 100px;
+                        background: rgba(255, 255, 255, .5);
+                        line-height: 115px;
+                        border-top-right-radius: 50px;
+                        border-bottom-right-radius: 50px;
+                        i {
+                            position: relative;
+                            right: 4px;
+                        }
+                    }
+                    .owl-next {
+                        position: absolute;
+                        right: 0;
+                        top: 45%;
+                        margin: 0;
+                        padding: 0;
+                        width: 55px;
+                        height: 100px;
+                        background: rgba(255, 255, 255, .5);
+                        line-height: 115px;
+                        border-top-left-radius: 50px;
+                        border-bottom-left-radius: 50px;
+                        i {
+                            position: relative;
+                            left: 4px;
+                        }
+                    }
+                    .owl-prev,
+                    .owl-next {
+                        transition: all .3s ease-in-out;
+                        -webkit-transition: all .3s ease-in-out;
+                        -moz-transition: all .3s ease-in-out;
+                        -ms-transition: all .3s ease-in-out;
+                        -o-transition: all .3s ease-in-out;
+                        text-align: center;
+                        i {
+                            font-size: 37px;
+                            font-weight: 800;
+                            transition: all .3s ease-in-out;
+                            -webkit-transition: all .3s ease-in-out;
+                            -moz-transition: all .3s ease-in-out;
+                            -ms-transition: all .3s ease-in-out;
+                            -o-transition: all .3s ease-in-out;
+                        }
+                        &:hover {
+                            background: #fff;
+                            i {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .owl-nav {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .whatwedo {
+            padding: 70px 0;
+            .main-text {
+                position: relative;
+                .text {
+                    font-size: 60px;
+                    font-weight: 600;
+                    color: #222;
+                    position: relative;
+                }
+                span {
+                    color: #AC61EE;
+                }
+            }
+            .main-block {
+                position: relative;
+                overflow: hidden;
+                .title {
+                    font-size: 36px;
+                    font-weight: 600;
+                    color: #222;
+                    p {
+                        font-size: 18px;
+                        color: #F23E20;
+                        font-weight: 600;
+                        margin-bottom: 0;
+                    }
+                }
+                .block {
+                    margin-top: 30px;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                    h2 {
+                        font-size: 18px;
+                        color: #222;
+                        font-weight: 600;
+                    }
+                    p {
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        color: #222;
+                        font-weight: 500;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+        .projects {
+            padding: 70px 0;
+            background: #AC61EE;
+            .text {
+                align-items: center;
+                .img {
+                    margin-right: 15px;
+                    img {
+                        position: relative;
+                        vertical-align: middle;
+                    }
+                }
+                color: white;
+                font-weight: 600;
+                font-size: 26px;
+            }
+            .hire {
+                .btn-white {
+                    font-weight: 500;
+                    color: #222;
+                    transition: all .3s ease-in-out;
+                    -webkit-transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    -ms-transition: all .3s ease-in-out;
+                    -o-transition: all .3s ease-in-out;
+                    &:hover {
+                        color: #AC61EE;
+                    }
+                }
+            }
+        }
+        .footer {
+            background: #000;
+            padding: 80px 0 35px 0;
+            color: white;
+            h3 {
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 60px;
+                width: 80%;
+            }
+            h5 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 68px;
+            }
+            .address {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .nav-list {
+                list-style: none;
+                li {
+                    a {
+                        color: white;
+                        font-size: 14px;
+                        transition: all .3s ease-in-out;
+                        -webkit-transition: all .3s ease-in-out;
+                        -moz-transition: all .3s ease-in-out;
+                        -ms-transition: all .3s ease-in-out;
+                        -o-transition: all .3s ease-in-out;
+                        &:hover {
+                            color: #AC61EE;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .sacend-footer {
+                margin-top: 150px;
+                p {
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    text-align: right;
+                }
+                .nav {
+                    .nav-item {
+                        .nav-link {
+                            color: white;
+                            font-size: 14px;
+                            transition: all .3s ease-in-out;
+                            -webkit-transition: all .3s ease-in-out;
+                            -moz-transition: all .3s ease-in-out;
+                            -ms-transition: all .3s ease-in-out;
+                            -o-transition: all .3s ease-in-out;
+                            &:hover {
+                                color: #AC61EE;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .wrapper {
+        .menu-sidebar {
+            width: 100%;
+            height: 100px;
+            right: 0;
+        }
+    }
+}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+    .wrapper {
+        .menu-sidebar {
+            width: 100%;
+            height: 100px;
+            right: 0;
+            .header-wrap {
+                flex-flow: row !important;
+                padding: 0 30px !important;
+                align-items: center;
+            }
+            .social-media {
+                .nav-list {
+                    display: flex;
+                    .nav-item {
+                        margin: 0 5px !important;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .content-wrapper {
+            margin-left: 0;
+            margin-top: 100px;
+            .whatwedo {
+                padding: 20px;
+                .main-text {
+                    .text {
+                        font-size: 43px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {}
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+
+/* Portrait  */
+
+@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {}
+
+
+/* Portrait */
+
+@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) {}
+
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+
+/* ----------- Retina Screens ----------- */
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 192dpi) {}
