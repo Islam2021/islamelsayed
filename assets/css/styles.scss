@@ -121,8 +121,8 @@ body {
                             &.whatsapp {
                                 background: #31D02F;
                             }
-                            &.facebook {
-                                background: #4267B2;
+                            &.linkedin {
+                                background: #0077b5;
                             }
                             &.instagram {
                                 background: linear-gradient( 200deg, #D23D96, #FF563E, #FEC150);
@@ -488,6 +488,9 @@ body {
                 padding: 0 30px !important;
                 align-items: center;
             }
+            .header-sidebar {
+                box-shadow: 0 8px 25px #0000001e;
+            }
             .social-media {
                 .nav-list {
                     display: flex;
@@ -502,12 +505,68 @@ body {
         }
         .content-wrapper {
             margin-left: 0;
-            margin-top: 100px;
+            padding-top: 85px;
+            .main-portfolio {
+                .column {
+                    .site-preview {
+                        height: 100%;
+                        width: 88%;
+                    }
+                }
+            }
             .whatwedo {
                 padding: 20px;
                 .main-text {
                     .text {
-                        font-size: 43px;
+                        font-size: 38px;
+                        line-height: 50px;
+                        margin-bottom: 30px;
+                    }
+                }
+                .main-block {
+                    .title {
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
+                    .block {
+                        img {
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+            .hireMe {
+                .text {
+                    font-size: 21px;
+                }
+                .hire {
+                    text-align: center !important;
+                    // width: 100% !important;
+                    margin-top: 20px;
+                }
+            }
+            .footer {
+                padding: 40px 0 35px 0;
+                h3 {
+                    font-size: 36px;
+                    line-height: 50px;
+                }
+                .nav-list {
+                    padding: 0;
+                }
+                .sacend-footer {
+                    margin-top: 50px;
+                    .nav {
+                        .nav-item {
+                            .nav-link {
+                                &:first-child {
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        text-align: left;
                     }
                 }
             }
