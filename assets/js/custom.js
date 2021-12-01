@@ -2,7 +2,7 @@ $(document).ready(function() {
     $(".progress .progress-bar").each(function() {
         $(this).animate({ width: $(this).attr("aria-valuenow") }, 50);
     });
-    $('.owl-carousel').owlCarousel({
+    $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 15,
         nav: true,
@@ -15,23 +15,26 @@ $(document).ready(function() {
         smartSpeed: 950,
         autoplayHoverPause: true,
         autoplay: true,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        navText: [
+            "<i class='fa fa-angle-left'></i>",
+            "<i class='fa fa-angle-right'></i>",
+        ],
         responsive: {
             0: {
-                items: 1
+                items: 1,
             },
             500: {
-                items: 1
+                items: 1,
             },
             768: {
-                items: 2
+                items: 2,
             },
             1000: {
-                items: 3
+                items: 3,
             },
             1360: {
-                items: 4
-            }
-        }
-    })
+                items: 4,
+            },
+        },
+    });
 });

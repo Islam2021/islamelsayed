@@ -93,7 +93,7 @@ body {
                     }
                 }
                 .social-media {
-                    display: flex;
+                    display: flex !important;
                     justify-content: center;
                     .nav-list {
                         list-style: none;
