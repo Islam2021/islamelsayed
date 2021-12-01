@@ -114,6 +114,10 @@ body {
                             justify-content: center;
                             align-items: center;
                             line-height: normal;
+                            i {
+                                color: white;
+                                font-size: 20px;
+                            }
                             &.whatsapp {
                                 background: #31D02F;
                             }
@@ -249,7 +253,7 @@ body {
                         padding: 0;
                         width: 55px;
                         height: 100px;
-                        background: rgba(255, 255, 255, .5);
+                        background: rgba(255, 255, 255, .8);
                         line-height: 115px;
                         border-top-right-radius: 50px;
                         border-bottom-right-radius: 50px;
@@ -266,7 +270,7 @@ body {
                         padding: 0;
                         width: 55px;
                         height: 100px;
-                        background: rgba(255, 255, 255, .5);
+                        background: rgba(255, 255, 255, .8);
                         line-height: 115px;
                         border-top-left-radius: 50px;
                         border-bottom-left-radius: 50px;
